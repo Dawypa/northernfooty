@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <!-- Twilight Stadium Backdrop -->
+    <linearGradient id="stadiumSky" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120" />
+      <stop offset="55%" stop-color="#152238" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Warm Orange Rim Glow -->
+    <radialGradient id="orangeGlow" cx="72%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.38" />
+      <stop offset="55%" stop-color="#FF5500" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FF5500" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Bold Blue Stadium Halo -->
+    <radialGradient id="blueGlow" cx="24%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35" />
+      <stop offset="65%" stop-color="#1D4ED8" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Turf Pitch Gradient -->
+    <linearGradient id="pitchSurface" x1="400" y1="455" x2="400" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#112A22" />
+      <stop offset="100%" stop-color="#081310" />
+    </linearGradient>
+
+    <!-- Player Guernsey Gradient -->
+    <linearGradient id="playerJersey" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+
+    <!-- Coach Jacket Gradient -->
+    <linearGradient id="coachJacket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Kick Arc Gradient -->
+    <linearGradient id="kickFlight" x1="530" y1="350" x2="770" y2="115" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FDBA74" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layers -->
+  <rect width="800" height="600" fill="url(#stadiumSky)" />
+  <rect width="800" height="600" fill="url(#orangeGlow)" />
+  <rect width="800" height="600" fill="url(#blueGlow)" />
+
+  <!-- Stylised Diagonal Speed Accents in Background -->
+  <g opacity="0.14">
+    <polygon points="480,0 535,0 325,600 270,600" fill="#2563EB" />
+    <polygon points="565,0 590,0 380,600 355,600" fill="#FF5500" />
+  </g>
+
+  <!-- Distant Adelaide Oval Goal Posts Silhouette -->
+  <g stroke="#64748B" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <line x1="655" y1="265" x2="655" y2="455" />
+    <line x1="685" y1="215" x2="685" y2="455" />
+    <line x1="720" y1="215" x2="720" y2="455" />
+    <line x1="750" y1="265" x2="750" y2="455" />
+  </g>
+
+  <!-- Turf Ground & White Arc Line -->
+  <path d="M0 460 Q400 442 800 460 L800 600 L0 600 Z" fill="url(#pitchSurface)" />
+  <path d="M40 505 Q410 475 770 515" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="3" fill="none" />
+
+  <!-- Ground Shadows -->
+  <ellipse cx="225" cy="518" rx="75" ry="14" fill="#04080E" opacity="0.65" />
+  <ellipse cx="475" cy="518" rx="85" ry="14" fill="#04080E" opacity="0.65" />
+
+  <!-- Training Agility Cones on Turf -->
+  <polygon points="348,522 368,522 362,504 354,504" fill="#FF5500" />
+  <polygon points="592,528 614,528 607,509 599,509" fill="#FF5500" />
+
+  <!-- Stylised Ball Trajectory Arc & Coaching Target Line -->
+  <path d="M535 335 Q635 190 755 135" stroke="url(#kickFlight)" stroke-width="4" stroke-dasharray="10 7" fill="none" />
+
+  <!-- ======================================================================= -->
+  <!-- FIGURE 1: COACH (LEFT) INSTRUCTING & DEMONSTRATING KICKING LINE         -->
+  <!-- ======================================================================= -->
+  <g id="coach-figure">
+    <!-- Back Leg (Left Leg) -->
+    <path d="M192 345 L178 430 L168 502" stroke="#1E293B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Front Leg (Right Leg) -->
+    <path d="M224 345 L240 432 L248 504" stroke="#0F172A" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Coach Turf Runners (Shoes) -->
+    <path d="M154 500 L186 500 L192 514 L150 514 Z" fill="#F8FAFC" />
+    <path d="M154 510 L192 510" stroke="#FF5500" stroke-width="3" />
+    <path d="M236 502 L274 502 L280 516 L234 516 Z" fill="#F8FAFC" />
+    <path d="M236 512 L280 512" stroke="#FF5500" stroke-width="3" />
+
+    <!-- Coach Torso / Track Jacket -->
+    <path d="M174 212 C174 198 238 198 242 214 L246 346 L176 346 Z" fill="url(#coachJacket)" />
+    <!-- Orange Performance Chest Stripe & Collar Accent -->
+    <path d="M178 246 L243 246 L244 258 L178 258 Z" fill="#FF5500" />
+    <path d="M208 210 L218 346" stroke="#475569" stroke-width="2" />
+
+    <!-- Coach Left Arm Holding Tactical Clipboard / Tablet -->
+    <path d="M182 226 L154 278 L184 300" stroke="#1E293B" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="168" y="274" width="34" height="44" rx="4" transform="rotate(-14 168 274)" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5" />
+
+    <!-- Coach Head, Neck & Cap -->
+    <rect x="198" y="182" width="18" height="24" rx="6" fill="#E2A77F" />
+    <circle cx="211" cy="168" r="21" fill="#F1B892" />
+    <!-- Coach Cap (Charcoal with Orange Visor) -->
+    <path d="M190 162 C190 144 228 142 232 160 Z" fill="#1E293B" />
+    <path d="M214 156 L247 161 L244 166 L214 162 Z" fill="#FF5500" />
+    <!-- Whistle Lanyard -->
+    <path d="M198 202 Q216 232 225 224" stroke="#FF5500" stroke-width="2.5" fill="none" />
+
+    <!-- Coach Right Arm Pointing / Instructing Follow-Through Angle -->
+    <path d="M234 224 L292 206 L342 188" stroke="#334155" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M234 218 L292 200 L340 183" stroke="#FF5500" stroke-width="3" stroke-linecap="round" />
+    <!-- Coach Pointing Hand -->
+    <circle cx="348" cy="185" r="8" fill="#F1B892" />
+    <path d="M348 185 L366 179" stroke="#F1B892" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- FIGURE 2: PLAYER (RIGHT) EXECUTING AFL DROP-PUNT KICK                   -->
+  <!-- ======================================================================= -->
+  <g id="player-figure">
+    <!-- Planted Support Leg (Left Leg Braced Firmly on Turf) -->
+    <path d="M452 342 L438 424 L424 502" stroke="#F1B892" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Navy & Orange Football Sock on Support Leg -->
+    <path d="M433 446 L424 502" stroke="#1E3A8A" stroke-width="21" stroke-linecap="round" />
+    <path d="M434 452 L431 464" stroke="#FF5500" stroke-width="21" />
+    <!-- Support Foot Boot & Moulded Studs -->
+    <path d="M412 500 L448 502 L452 515 L408 515 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+
+    <!-- Swinging Kicking Leg (Right Leg Extended Through Follow-Through) -->
+    <path d="M475 338 L538 378 L606 346" stroke="#F1B892" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Navy & Orange Football Sock on Kicking Leg -->
+    <path d="M556 369 L606 346" stroke="#1E3A8A" stroke-width="21" stroke-linecap="round" />
+    <path d="M562 366 L574 361" stroke="#FF5500" stroke-width="21" />
+    <!-- Kicking Foot Boot (Bright Orange Highlight) -->
+    <path d="M602 336 L632 322 L638 336 L608 354 Z" fill="#FF5500" />
+
+    <!-- Player Navy Football Shorts -->
+    <path d="M436 312 L488 312 L498 358 L430 356 Z" fill="#0F172A" />
+    <path d="M462 314 L460 355" stroke="#1E293B" stroke-width="2" />
+    <path d="M434 348 L496 350" stroke="#FF5500" stroke-width="3" />
+
+    <!-- Player Sleeveless AFL Guernsey (Bold Cobalt Blue with Vibrant Orange Sash) -->
+    <path d="M432 204 C432 192 486 192 490 206 L488 314 L436 314 Z" fill="url(#playerJersey)" />
+    <!-- Vibrant Orange Diagonal Guernsey Sash -->
+    <polygon points="436,225 454,205 488,274 488,302" fill="#FF5500" />
+    <!-- Crisp White Rim Highlight on Guernsey -->
+    <path d="M489 206 L488 312" stroke="#93C5FD" stroke-width="2.5" />
+
+    <!-- Player Balance Left Arm (Extended Forward/Side for Stability) -->
+    <path d="M438 214 L392 246 L362 232" stroke="#F1B892" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="358" cy="230" r="7" fill="#F1B892" />
+
+    <!-- Player Guide Right Arm (Single-Hand Ball Drop Follow-Through) -->
+    <path d="M484 214 L526 254 L548 282" stroke="#F1B892" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="551" cy="285" r="7" fill="#F1B892" />
+
+    <!-- Player Head & Hair Focused on Ball Contact -->
+    <rect x="454" y="178" width="16" height="22" rx="5" fill="#E2A77F" />
+    <circle cx="465" cy="164" r="20" fill="#F1B892" />
+    <path d="M446 158 C446 140 482 138 485 156 C474 150 456 152 446 158 Z" fill="#0F172A" />
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- SHERRIN OVAL FOOTBALL LAUNCHING OFF THE BOOT                            -->
+  <!-- ======================================================================= -->
+  <g transform="translate(652, 232) rotate(-34)">
+    <!-- Outer Glow -->
+    <ellipse cx="0" cy="0" rx="32" ry="20" fill="#FF5500" opacity="0.28" />
+    <!-- Oval Football Body -->
+    <ellipse cx="0" cy="0" rx="26" ry="15.5" fill="#FF5500" stroke="#FFF7ED" stroke-width="2" />
+    <!-- Seam & Laces -->
+    <path d="M-24 0 Q0 -6 24 0" stroke="#FFF7ED" stroke-width="1.5" fill="none" />
+    <line x1="-8" y1="-4" x2="-8" y2="2" stroke="#FFF7ED" stroke-width="2" />
+    <line x1="-3" y1="-4.5" x2="-3" y2="1.5" stroke="#FFF7ED" stroke-width="2" />
+    <line x1="2" y1="-4.5" x2="2" y2="1.5" stroke="#FFF7ED" stroke-width="2" />
+    <line x1="7" y1="-4" x2="7" y2="2" stroke="#FFF7ED" stroke-width="2" />
+  </g>
+
+  <!-- Kinetic Motion Swooshes Around Kicking Boot -->
+  <path d="M510 422 Q575 415 624 352" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.75" />
+  <path d="M532 436 Q590 428 634 368" stroke="#FF5500" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85" />
+</svg>
